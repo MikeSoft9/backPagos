@@ -87,5 +87,5 @@ def listar_por_fechas():
     return jsonify({'resultados': result, 'monto': total_monto,'comision':total_comision, 'pagos': numpagos})
 
 if __name__ == '__main__':
-   http_server = WSGIServer(("127.0.0.1", 8080), app)
+   http_server = WSGIServer(("127.0.0.1"), app)
    http_server.serve_forever()
